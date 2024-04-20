@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Clock.css">
+    <audio src="./cartoon.mp3" id="audi"></audio>
+
+    <style>
+        .timerrr {
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* gap: 49px; */
+        }
+        .stopwatch {
+            width: 70vw;
+            height: 60vh;
+            /* border: 1px solid white; */
+            /* padding: 10px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;  
+            flex-wrap: wrap;
+            align-content: center;
+            gap: 10px;
+        }
+        .head {
+            width: 250px;
+            height: 60px;
+            padding: 7px;
+            border: 1px solid white;            
+        }
+    </style>
+
+
+    
+</head>
+
+<body>
+    <div class="mainnav">
+        <nav>
+            <div href="" class="nav1">Alarm</div>
+            <div href="" class="nav2">Timer</div>
+            <div href="" class="nav3">StopWatch</div>
+            <div href="" class="nav4">World Clock</div>
+        </nav>
+    </div>
+
+    <div class="main">
+        <section class="sec">
+
+            <div class="util1">
+                <div class="u1left">
+                    <img src="./OIG3.jpeg" id="img" alt="">
+                </div>
+                <div class="u1right">
+                    <div class="maintime">
+                        <h1 class="h1">Current Time:</h1>
+                        <h1 class="ti"></h1>
+                    </div>
+                    <h1 class="h2">Set Alarm</h1>
+                    <div class="timing">
+                        <div class="settime">
+                            <select name="Hours" id="hrs">
+                                <!-- <option value="">Hours</option> -->
+                            </select>
+                            <select name="Minutes" id="min">
+                                <!-- <option value="">Minutes</option> -->
+                            </select>
+                            <select name="" id="sec">
+                                <!-- <option value="">Seconds</option> -->
+                            </select>
+                            <select name="" id="ampm">
+                                <!-- <option value="">AM/PM</option> -->
+                            </select>
+                        </div>
+                        <button class="btn">SET ALARM</button>
+                        <button class="lbtn">Delete Alarm</button>
+                    </div>
+                    <div class="card">
+
+                        <!-- <div class="cards">
+                            <div class="lef">
+                                <div class="grp1">
+                                    <h2 class="cardtime">16:14:15</h2>
+                                    <h6>PM</h6>
+                                </div>
+                                <h5 class="grp2">Active | Ring once | Wake Up</h5>
+                            </div>
+                            <div class="rig">
+                                <label class="switch">
+                                    <input type="checkbox" id="toggleSwitch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+            </div>
+            <div class="util2">
+                <div class="part">
+                    <img src="./OIG3 (2).jpeg" id="img1" alt="">
+                </div>
+                <div class="part1">
+                    <div class="timerrr">
+                        <div class="hrsss">0
+                        </div>
+                        <!-- <div>:</div> -->
+                        <div class="minnn">0
+                        </div>
+                        <!-- <div>:</div> -->
+                        <div class="seccc">0
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <button class="btn1" s onclick="Timer()">Set Timer</button>
+                        <button class="btn1 rese">Reset</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="util3">
+                <h1>Stop Watch</h1>
+                <div class="wor">
+                    <div class="gh"></div>
+                    <div class="mii"></div>
+                    <div class="seee"></div>
+                </div>
+                <div class="butttttons">
+                    <button class="btn1" onclick="startwatch()">Start</button>
+                    <button class="btn1 brn">Stop</button>
+                </div>
+            </div>
+            <div class="util4">
+                <h1>World clock</h1>
+                <div class="stopwatch">  
+                    <div class="head">India :
+                        <div class="tz1"></div>
+                    </div>
+                    <div class="head">Usa :
+                        <div class="tz2"></div>
+                    </div>
+                    <div class="head">China :
+                        <div class="tz3"></div>
+                    </div>
+
+                </div>
+                <button class="btn1" onclick="addzone()">Add timezone</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="Clock.js"></script>
+</body>
+
+</html>
