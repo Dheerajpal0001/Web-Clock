@@ -33,7 +33,7 @@ nav{
     justify-content: space-around;
     font-size: 1vw;
     border-radius: 1vw;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .nav1{
@@ -261,7 +261,7 @@ select{
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .part{
     width: 35%;
@@ -270,15 +270,16 @@ select{
 
 .part #img1{
     width: 26vw;
-    margin-left: 80px;
+    /* margin-left: 60px; */
     border-image-width: 2vw;   
     border-radius: 8vw;
     transform: rotate3d(7,6,-1,30deg);
 
 }
 .part1{
-    width: calc(100% - 35%);
-    height: 73%;
+    /* width: calc(100% - 35%); */
+    /* height: 73%; */
+    padding-top: 10vh;
     display: flex;
     align-items: center ;
     flex-direction: column;
@@ -390,4 +391,56 @@ select{
     } */
 .util3 h1{
     font-size: 40px;
+}
+
+
+
+@media screen and (max-width: 415px) {
+    nav{
+        /* position: relative; */
+        left: 0;
+        width: 100vw;
+        font-size: 3.5vw;
+    }
+
+    .util1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30vh;
+    }
+    .u1left{
+        /* position: relatives; */
+        /* top: 10vh; */
+        height: 20%;
+        margin: auto;
+    }
+    .u1right{
+        margin: auto;
+        margin-top: 0vh;
+        padding-left: 0;
+    }
+    .util2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .part{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    .part #img1{
+        margin-left: 0;
+    }
+    .util3{
+        display: flex;
+        flex-direction: column;
+    }
+    .util4  {
+        display: flex;
+        flex-direction: column;
+    }
 }
